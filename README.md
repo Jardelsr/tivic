@@ -12,10 +12,10 @@ O Banco TIVIC necessita criar uma API Rest para expor os seguintes serviços par
 - `GET /accounts/balance`, passando o bearer token gerado no login
   É retornado o saldo da conta corrente retirada do token usado usado na requisição.
   
-- `/accounts/deposit`, passando o bearer token gerado no login e um parâmentro numérico `value` no body
+- `POST /accounts/deposit`, passando o bearer token gerado no login e um parâmentro numérico `value` no body
   Adicion ao saldo o valor passado em `value`.
   
-- `/accounts/withdraw`, passando o bearer token gerado no login e um parâmentro numérico `value` no body
+- `POST /accounts/withdraw`, passando o bearer token gerado no login e um parâmentro numérico `value` no body
   Subtrai do saldo o valor passado em `value` caso o resultado da operação seja superior a 0.
 
 # Sobre a implemetação
